@@ -35,6 +35,8 @@ Un **estado** en este juego está definido por la configuración actual de los a
 Por ejemplo, un estado puede ser:
 ```plaintext
 (3, 2, 0, 1, 'izq')
+```
+
 Esto significa que en el lado izquierdo del río hay 3 ovejas y 2 lobos, mientras que en el lado derecho hay 0 ovejas y 1 lobo, y la embarcación está en el lado izquierdo.
 
 El conjunto de estados es el conjunto de todas las configuraciones posibles que se pueden alcanzar durante el juego, siempre respetando las reglas y restricciones del juego.
