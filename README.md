@@ -66,6 +66,8 @@ El estado inicial es el estado en el que todos los animales (ovejas y lobos) est
 Por ejemplo, si tenemos 3 ovejas y 3 lobos, el estado inicial sería:
 ```plaintext
 (3, 3, 0, 0, 'izq')
+```
+
 Esto significa que hay 3 ovejas y 3 lobos en el lado izquierdo, 0 ovejas y 0 lobos en el lado derecho, y la embarcación está en el lado izquierdo.
 
 ## Estado Objetivo:
@@ -74,6 +76,8 @@ El estado objetivo es el estado en el que todos los animales (ovejas y lobos) ha
 En nuestro ejemplo de 3 ovejas y 3 lobos, el estado objetivo sería:
 ```plaintext
 (0, 0, 3, 3, 'der')
+```
+
 Esto significa que las 3 ovejas y los 3 lobos han llegado al lado derecho del río y la embarcación también está en el lado derecho.
 
 ###Implementación del Algoritmo A*
