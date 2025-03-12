@@ -18,6 +18,45 @@ El juego consiste en ayudar a un grupo de lobos y ovejas a cruzar un río median
 - El algoritmo debe asegurar que las reglas del juego se respeten durante todo el proceso de traslado.
 - El algoritmo utilizado para la búsqueda de soluciones es el **A\***, que optimiza el camino hacia la solución considerando tanto el coste acumulado de las acciones como una heurística que guía la búsqueda.
 
+### Definición de costes
+
+- **Coste acumulado (g):** Representa el número de pasos realizados desde el estado inicial hasta el estado actual.
+- **Heurística (h):** En este caso, la heurística es el número total de animales que aún no han cruzado el río. Cuantos más animales sin trasladar, mayor será la heurística, guiando el algoritmo a los estados que parecen estar más cerca del objetivo.
+- **Coste total (f):** Es la suma de `g` y `h`, y el algoritmo selecciona el estado con el menor valor de `f` en cada iteración.
+
+### Estudio Comparativo
+
+- **Solución A\* (3 ovejas, 3 lobos):**
+  
+  ```plaintext
+  [(3, 3, 0, 0, 'izq'), (3, 1, 0, 2, 'der'), (3, 2, 0, 1, 'izq'), (3, 0, 0, 3, 'der'),
+   (3, 1, 0, 2, 'izq'), (1, 1, 2, 2, 'der'), (2, 2, 1, 1, 'izq'), (0, 2, 3, 1, 'der'),
+   (0, 3, 3, 0, 'izq'), (0, 1, 3, 2, 'der'), (1, 1, 2, 2, 'izq'), (0, 0, 3, 3, 'der')]
+   ```
+   Tiempo de Ejecución A*:
+  ```plaintext
+  0.0012784004211425781 segundos
+
+  ```
+  
+### Comparativa
+
+## Nodos Visitados: 
+A* realiza una exploración más eficiente gracias a la heurística, visitando menos nodos que una búsqueda no informada.
+
+## Nodos Generados: 
+La optimización por la heurística reduce la cantidad de nodos generados en comparación con otros algoritmos de búsqueda como BFS.
+
+## Solución Obtenida:
+ La solución proporcionada por A* es óptima, siguiendo una ruta que respeta las restricciones del problema.
+¿Es el heurístico admisible?
+Sí, la heurística utilizada es admisible, ya que nunca sobreestima el coste restante. En este caso, la heurística es simplemente el número de animales que aún no han cruzado el río, lo cual siempre es una estimación válida y no mayor que el coste real necesario para alcanzar el objetivo.
+
+### Conclusión
+El algoritmo A* es eficiente para este tipo de problema, ya que, al ser informado, optimiza la exploración del espacio de búsqueda y encuentra la solución más rápido que algoritmos no informados. La heurística utilizada es admisible y ayuda a guiar la búsqueda de manera eficaz.
+
+
+
 ## Diagrama de Estados
 
 Cada estado del juego se representa por una tupla que contiene:
@@ -55,6 +94,9 @@ Los operadores son las posibles acciones que el barquero puede realizar. Los ope
 - Transportar 2 lobos.
 - Transportar 1 oveja y 1 lobo.
 
+Son de tipo Parametrizados Y no son específicos porque 
+
+
 ### Factores de Ramificación:
 El factor de ramificación es el número de acciones posibles que el barquero puede realizar en un estado dado. En cada estado, el barquero puede tomar 5 acciones diferentes, lo que da un factor de ramificación de 5.
 
@@ -68,7 +110,7 @@ Por ejemplo, si tenemos 3 ovejas y 3 lobos, el estado inicial sería:
 (3, 3, 0, 0, 'izq')
 ```
 
-Esto ha sifo interpretado a través del código en initial_easy.scv:
+Esto ha sido interpretado a través del código en initial_easy.scv:
 
 ```plaintext
 (OOLL; ;I')
@@ -84,7 +126,7 @@ En nuestro ejemplo de 3 ovejas y 3 lobos, el estado objetivo sería:
 ```
 Que sería:
 ```plaintext
-;OOLL ;I
+(;OOLL ;I)
 ```
 
 Esto significa que las 3 ovejas y los 3 lobos han llegado al lado derecho del río y la embarcación también está en el lado derecho.
