@@ -1,5 +1,5 @@
-# Adrian Brihuega Sanchez
-# Johan Alexander Pulupa Romero
+### Adrian Brihuega Sanchez
+### Johan Alexander Pulupa Romero
 
 # Juego de "Lobos y Ovejas en el Río" - Resolución con A* (Algoritmo de Búsqueda A*)
 
