@@ -39,20 +39,20 @@ El juego consiste en ayudar a un grupo de lobos y ovejas a cruzar un río median
 
   ```
   
-### Comparativa
+## Comparativa
 
-## Nodos Visitados: 
+### Nodos Visitados: 
 A* realiza una exploración más eficiente gracias a la heurística, visitando menos nodos que una búsqueda no informada.
 
-## Nodos Generados: 
+### Nodos Generados: 
 La optimización por la heurística reduce la cantidad de nodos generados en comparación con otros algoritmos de búsqueda como BFS.
 
-## Solución Obtenida:
+### Solución Obtenida:
  La solución proporcionada por A* es óptima, siguiendo una ruta que respeta las restricciones del problema.
 ¿Es el heurístico admisible?
 Sí, la heurística utilizada es admisible, ya que nunca sobreestima el coste restante. En este caso, la heurística es simplemente el número de animales que aún no han cruzado el río, lo cual siempre es una estimación válida y no mayor que el coste real necesario para alcanzar el objetivo.
 
-### Conclusión
+## Conclusión
 El algoritmo A* es eficiente para este tipo de problema, ya que, al ser informado, optimiza la exploración del espacio de búsqueda y encuentra la solución más rápido que algoritmos no informados. La heurística utilizada es admisible y ayuda a guiar la búsqueda de manera eficaz.
 
 
