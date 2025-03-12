@@ -38,7 +38,21 @@ El juego consiste en ayudar a un grupo de lobos y ovejas a cruzar un río median
   0.0012784004211425781 segundos
 
   ```
+
+
+- **Solución BFS\* (3 ovejas, 3 lobos):**
   
+  ```plaintext
+  [(3, 3, 0, 0, 'izq'), (2, 2, 1, 1, 'der'), (3, 2, 0, 1, 'izq'), (3, 0, 0, 3, 'der'), 
+  (3, 1, 0, 2, 'izq'), (1, 1, 2, 2, 'der'), (2, 2, 1, 1, 'izq'), (0, 2, 3, 1, 'der'), 
+  (0, 3, 3, 0, 'izq'), (0, 1, 3, 2, 'der'), (1, 1, 2, 2, 'izq'), (0, 0, 3, 3, 'der')]
+
+   ```
+   Tiempo de Ejecución BFS:
+  ```plaintext
+ 0.0007214546203613281 segundos
+
+  ```  
 ## Comparativa
 
 ### Nodos Visitados: 
