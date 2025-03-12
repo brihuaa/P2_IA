@@ -35,3 +35,32 @@ Un **estado** en este juego está definido por la configuración actual de los a
 Por ejemplo, un estado puede ser:
 ```plaintext
 (3, 2, 0, 1, 'izq')
+Esto significa que en el lado izquierdo del río hay 3 ovejas y 2 lobos, mientras que en el lado derecho hay 0 ovejas y 1 lobo, y la embarcación está en el lado izquierdo.
+
+El conjunto de estados es el conjunto de todas las configuraciones posibles que se pueden alcanzar durante el juego, siempre respetando las reglas y restricciones del juego.
+
+## 2. Acción, Operadores y Factores de Ramificación
+
+### Acción:
+Una acción es un movimiento realizado por el barquero con la embarcación. En cada acción, el barquero puede transportar entre 1 o 2 animales (ovejas, lobos o una combinación de ambos).
+
+### Operadores:
+Los operadores son las posibles acciones que el barquero puede realizar. Los operadores en este problema incluyen:
+
+- Transportar 1 oveja.
+- Transportar 1 lobo.
+- Transportar 2 ovejas.
+- Transportar 2 lobos.
+- Transportar 1 oveja y 1 lobo.
+
+### Factores de Ramificación:
+El factor de ramificación es el número de acciones posibles que el barquero puede realizar en un estado dado. En cada estado, el barquero puede tomar 5 acciones diferentes, lo que da un factor de ramificación de 5.
+
+## 3. Definición del Estado Inicial y Estado Objetivo
+
+### Estado Inicial:
+El estado inicial es el estado en el que todos los animales (ovejas y lobos) están en el lado izquierdo del río y la embarcación también está en ese lado.
+
+Por ejemplo, si tenemos 3 ovejas y 3 lobos, el estado inicial sería:
+```plaintext
+(3, 3, 0, 0, 'izq')
