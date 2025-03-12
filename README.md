@@ -68,6 +68,11 @@ Por ejemplo, si tenemos 3 ovejas y 3 lobos, el estado inicial sería:
 (3, 3, 0, 0, 'izq')
 ```
 
+Esto ha sifo interpretado a través del código en initial_easy.scv:
+
+```plaintext
+(OOLL; ;I')
+```
 Esto significa que hay 3 ovejas y 3 lobos en el lado izquierdo, 0 ovejas y 0 lobos en el lado derecho, y la embarcación está en el lado izquierdo.
 
 ## Estado Objetivo:
@@ -76,6 +81,10 @@ El estado objetivo es el estado en el que todos los animales (ovejas y lobos) ha
 En nuestro ejemplo de 3 ovejas y 3 lobos, el estado objetivo sería:
 ```plaintext
 (0, 0, 3, 3, 'der')
+```
+Que sería:
+```plaintext
+;OOLL ;I
 ```
 
 Esto significa que las 3 ovejas y los 3 lobos han llegado al lado derecho del río y la embarcación también está en el lado derecho.
