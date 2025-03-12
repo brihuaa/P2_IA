@@ -68,7 +68,7 @@ Por ejemplo, si tenemos 3 ovejas y 3 lobos, el estado inicial sería:
 (3, 3, 0, 0, 'izq')
 ```
 
-Esto ha sifo interpretado a través del código en initial_easy.scv:
+Esto ha sido interpretado a través del código en initial_easy.scv:
 
 ```plaintext
 (OOLL; ;I')
