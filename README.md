@@ -48,7 +48,7 @@ El juego consiste en ayudar a un grupo de lobos y ovejas a cruzar un río median
   (0, 3, 3, 0, 'izq'), (0, 1, 3, 2, 'der'), (1, 1, 2, 2, 'izq'), (0, 0, 3, 3, 'der')]
 
    ```
-   Tiempo de Ejecución BFS:
+  Tiempo de Ejecución BFS:
   ```plaintext
  0.0007214546203613281 segundos
   ```  
