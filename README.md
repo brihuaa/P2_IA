@@ -64,3 +64,27 @@ El estado inicial es el estado en el que todos los animales (ovejas y lobos) est
 Por ejemplo, si tenemos 3 ovejas y 3 lobos, el estado inicial sería:
 ```plaintext
 (3, 3, 0, 0, 'izq')
+Esto significa que hay 3 ovejas y 3 lobos en el lado izquierdo, 0 ovejas y 0 lobos en el lado derecho, y la embarcación está en el lado izquierdo.
+
+## Estado Objetivo:
+El estado objetivo es el estado en el que todos los animales (ovejas y lobos) han cruzado al lado derecho del río, y la embarcación también está en ese lado.
+
+En nuestro ejemplo de 3 ovejas y 3 lobos, el estado objetivo sería:
+```plaintext
+(0, 0, 3, 3, 'der')
+Esto significa que las 3 ovejas y los 3 lobos han llegado al lado derecho del río y la embarcación también está en el lado derecho.
+
+###Implementación del Algoritmo A*
+El algoritmo A* se utiliza para encontrar la solución óptima al problema. Este algoritmo combina la búsqueda informada con una función heurística que estima el coste restante para alcanzar el objetivo. En este caso, la heurística puede ser el número total de animales que aún no han cruzado el río.
+
+##Pasos del Algoritmo:
+
+- **Inicialización**: Comienza con el estado inicial.
+
+- **Exploración**: Genera todos los estados posibles a partir del estado actual, aplicando los operadores válidos.
+
+- **Evaluación**: Calcula el coste acumulado y la heurística para cada estado generado.
+
+- **Selección**: Selecciona el estado con el menor coste total (coste acumulado + heurística) para continuar la búsqueda.
+
+- **Repetición**: Repite el proceso hasta alcanzar el estado objetivo
