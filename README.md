@@ -51,7 +51,6 @@ El juego consiste en ayudar a un grupo de lobos y ovejas a cruzar un río median
    Tiempo de Ejecución BFS:
   ```plaintext
  0.0007214546203613281 segundos
-
   ```  
 ## Comparativa
 
