@@ -80,10 +80,10 @@ En nuestro ejemplo de 3 ovejas y 3 lobos, el estado objetivo sería:
 
 Esto significa que las 3 ovejas y los 3 lobos han llegado al lado derecho del río y la embarcación también está en el lado derecho.
 
-###Implementación del Algoritmo A*
+### Implementación del Algoritmo A*
 El algoritmo A* se utiliza para encontrar la solución óptima al problema. Este algoritmo combina la búsqueda informada con una función heurística que estima el coste restante para alcanzar el objetivo. En este caso, la heurística puede ser el número total de animales que aún no han cruzado el río.
 
-##Pasos del Algoritmo:
+## Pasos del Algoritmo:
 
 - **Inicialización**: Comienza con el estado inicial.
 
